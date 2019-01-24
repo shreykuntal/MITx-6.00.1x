@@ -6,8 +6,6 @@ def debt(balance, annualInterestRate):
         for i in range(12):
             monthly_unpaid_balance = balance - monthly_payment
             balance = monthly_unpaid_balance + (monthly_interest_rate * monthly_unpaid_balance)
-            print('Unpaid Balance =', monthly_unpaid_balance)
-            print('MIR * MUB =',monthly_interest_rate * monthly_unpaid_balance)
         if balance <= 0:
             print('Lowest payment:', monthly_payment)
             break
