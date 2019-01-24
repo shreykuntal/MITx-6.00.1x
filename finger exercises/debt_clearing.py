@@ -12,4 +12,3 @@ def debt(balance, annualInterestRate):
         else:
             monthly_payment += 10
             balance = init_balance
-print(debt(3329,.2))
